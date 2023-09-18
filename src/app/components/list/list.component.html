@@ -1,7 +1,28 @@
-<h1>Times</h1>
-<div *ngFor="let team of teams">
-  <h2>{{ team.name }}</h2>
-  <ul>
-    <li *ngFor="let player of team.players">{{ player }}</li>
-  </ul>
+<h1 class="text-2xl mb-2 mt-2 text-sky-700">Times</h1>
+<button
+  class="bg-red-500 disabled:bg-red-300 rounded-md text-white font-bold py-2 px-4"
+  (click)="removeAllPlayers()"
+  [disabled]="teams.length === 0"
+>
+  Excluir Jogadores
+</button>
+
+<div class="overflow-y-scroll border border-sky-100 h-96 w-full mt-2">
+  <div *ngIf="teams.length > 0; else noTeams">
+    <div
+      *ngFor="let team of teams"
+      class="flex flex-col border border-green-200 m-1 rounded-md"
+    >
+      <h2 class="text-left text-2xl">🏟️ {{ team.name }}</h2>
+      <ul>
+        <li *ngFor="let player of team.players">⚽ {{ player }}</li>
+      </ul>
+    </div>
+  </div>
+  <ng-template #noTeams>
+    <div class="flex flex-col justify-center items-center h-full">
+      <h2 class="text-2xl">Nenhum time adicionado 🤷🏾‍♂️</h2>
+      <p class="text-gray-500">Adicione um time para começar ✅</p>
+    </div>
+  </ng-template>
 </div>

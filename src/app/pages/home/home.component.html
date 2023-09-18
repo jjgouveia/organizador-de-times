@@ -1,8 +1,14 @@
-<app-header></app-header>
-<div class="flex justify-content-center w-full">
-  <div style="width: 600px">
-    <app-add-player></app-add-player>
-    <app-list></app-list>
+<div
+  class="flex max-w-5xl mx-auto flex-col items-center justify-around py-2 min-h-screen w-full"
+>
+  <app-header></app-header>
+  <div
+    class="flex flex-1 w-full flex-col items-center justify-between text-center px-4 mt-0 sm:mt-0 sm:-mb-10"
+  >
+    <div class="w-3/4 mt-2">
+      <app-add-player></app-add-player>
+      <app-list></app-list>
+    </div>
   </div>
+  <app-footer></app-footer>
 </div>
-<app-footer></app-footer>

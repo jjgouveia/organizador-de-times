@@ -1,27 +1,47 @@
-# OrganizadorDeTimes
+# API Organizador de Times
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+### Resolução do Bootcamp de Desenvolvedor Jr da [IBM](https://www.ibm.com/br-pt)
 
-## Development server
+#### Este, não obrigatório.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descrição
 
-## Code scaffolding
+Front-end que consome a API de gerenciamento de times de futebol e seus jogadores e os organiza de acordo com as seguintes regras:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Cada time deve ser formado com jogadores cujo sobrenome comece com a mesma letra. Ou seja, jogadores com sobrenomes começando com 'A' formam um time, jogadores com 'B' formam outro, e assim por diante.
 
-## Build
+Mas aqui está a reviravolta: você só pode ter UM jogador com o mesmo sobrenome começando com a mesma letra em um time. Se houver mais de um jogador com o mesmo sobrenome começando com a mesma letra, eles não podem estar no mesmo time.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Deploy
 
-## Running unit tests
+O Front-end está hospedado na Vercel e pode ser acessado [aqui](https://organizadordetimes.vercel.app/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A API está hospedada no Heroku e pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/)
 
-## Running end-to-end tests
+O repositório da API pode ser acessado [aqui](https://github.com/jjgouveia/organizador-de-times-ibm/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Documentação da API (Swagger)
 
-## Further help
+A documentação da API pode ser acessada [aqui](https://organizadordetimes-edee049df2b8.herokuapp.com/swagger-ui.html).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tecnologias
+
+- Angular 16
+- Tailwind CSS
+
+## Como executar
+
+### Pré-requisitos
+
+- Node 14 +
+
+### Executando
+
+- Clone o repositório
+- Instale as dependências com `npm install`
+- Execute o projeto com `npm start`
+- Acesse o projeto em `http://localhost:4200`
+
+## Autor
+
+[Jarbas Gouveia](https://github.com/jjgouveia)

@@ -43,4 +43,8 @@ export class ListComponent implements OnInit, OnDestroy {
       }
     });
   }
+
+  public removeAllPlayers() {
+    this.playerService.removeAllPlayers().subscribe();
+  }
 }

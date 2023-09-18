@@ -1,0 +1,18 @@
+<div class="flex">
+  <label class="mr-3" for=""> Nome e sobrenome do Jogador</label>
+  <input
+    type="text"
+    name=""
+    id=""
+    [(ngModel)]="nome"
+    placeholder="Ex.: Carlinhos Bala"
+  />
+  <button
+    class="ml-3"
+    [disabled]="nome.length === 0"
+    (click)="addPlayer({nome})"
+  >
+    Adicionar
+  </button>
+  <app-remove-player></app-remove-player>
+</div>

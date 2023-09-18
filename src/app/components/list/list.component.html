@@ -1,0 +1,7 @@
+<h1>Times</h1>
+<div *ngFor="let team of teams">
+  <h2>{{ team.name }}</h2>
+  <ul>
+    <li *ngFor="let player of team.players">{{ player }}</li>
+  </ul>
+</div>
